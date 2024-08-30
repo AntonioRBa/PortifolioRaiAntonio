@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+    <style>
+        /* corpo do texto, colocando um fundo para site */
+        body{
+            margin: 0;
+            background-image: url(Home.png);
+            background-size: cover;
+        }
+
+        .container{
+            display: grid;
+        }
+        
+        .wrapper {
+          justify-content: center;
+          align-items: center;    
+        }
+
+        .card{
+          background-color: white; /* cor de fundo do card */
+          border-radius: 20px; /* definindo as bordas do cartão */
+          border: 2px solid #8C8274 ;
+        }
+        /* Centralizando os elementos do meu cartão e colocando em ordem */
+        .card div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; /* colocando o conteúdo para o centro*/
+        }
+
+        /* Determinando a imagem */
+        .image{
+            display: block;
+            margin: auto;
+        }
+        /* Estabelecendo meu cabeçalho */
+        header{
+           grid-column-start: 1;
+           grid-column-end: 12;
+           background-color: #8C8274;
+        }
+        
+        /* Ajustando o formato do menu */
+        .menu{
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: right; /* colocando o conteúdo para direita*/
+            }
+        
+        li{float:left;}
+        
+        /* Estilizando o rodapé */
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #8C8274;
+            color: white;
+            text-align: center;
+        }
+
+        /* Formatação de menu */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 30px;
+            background-color: #8C8274;
+        }
+        
+
+        li a{
+            display: block;
+            color:white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: white; 
+            color: #8C8274 ;
+        }
+
+    /* Novo estilo e forma para dispositivos móveis*/
+    @media screen and (max-width: 767px){
+        
+        header{
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .card{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+    <header class="container">
+    <a aside="nome_rai">
+    <a href="index.html">
+    <img src="nomee_rai.png" width="170" height="85" >
+    </a>
+
+    <nav class=" container menu">
+    <ul>
+    <li><a href="index.html"> SOBRE MIM </a></li>
+    <li><a href="academic.html"> FORMAÇÃO ACADÊMICA </a></li>
+    <li><a href="portifolio.html"> PORTIFÓLIO </a></li>
+    <li><a href="contact.html"> CONTATO </a></li>
+    </ul>
+    </nav>
+    </header>
+    <br>
+
+    <div class= "container wrapper">
+    <div class="card">
+        <img class="image" src="imagem_uninter.png" height="130"; width="200">
+        <div>
+            <h1 style="font-family: sans-serif; color: #8C8274; font-size: 25px;">Técnico em Análise e Desenvolvimento de Sistemas</h1>
+            <h2 style="font-family: sans-serif; color: #8C8274;"> Centro Universitário Internacional UNINTER</h2>
+            <h3 style="font-family: sans-serif; color: #8C8274;"> 2024-2026</h3>
+        </div>
+        <img class="image" src="imagem_senai.png" height="100"; width="200" >
+        <div> 
+            <h1 style="font-family: sans-serif; color: #8C8274; font-size: 25px;">Qualificação profissional em Assistente Administrativo</h1>
+            <h2 style="font-family: sans-serif; color: #8C8274;"> Senai Bahia</h2>
+            <h3 style="font-family: sans-serif; color: #8C8274;"> 2021-2022</h3>
+        </div>
+        </div>
+
+        <section class="principal">
+
+        </section>
+
+</body>
+</html>

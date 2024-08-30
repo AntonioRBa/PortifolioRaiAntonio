@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+    <style>
+        /* corpo do texto, colocando um fundo para site */
+        body{
+            margin: 0;
+            background-image: url(Home.png);
+            background-size: cover;
+        }
+
+        /* Colocando cor na tabela e borda*/
+        table, tr, td{
+            border: 1px solid #8C8274;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        /* Estabelecendo meu cabeçalho */
+        header{
+           grid-column-start: 1;
+           grid-column-end: 12;
+           background-color: #8C8274;
+        }
+
+        /* Ajustando o formato do menu */
+        .menu{
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: right;
+            }
+        
+        li{float:left;}
+
+        /* Definindo as colunas da foto */
+        .imagem_rai{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+         /* Colocando bordas e cores */
+        .imagem_rai img{
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            border: 2px solid #8C8274;
+            
+        }
+
+        /* Definindo meus textos na classe principal*/
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        /* Estilizando o rodapé */
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #8C8274;
+            color: white;
+            text-align: center;
+        }
+
+        /* Formatação de menu */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 30px;
+            background-color: #8C8274;
+        }
+        
+
+        li a{
+            display: block;
+            color:white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: white; 
+            color: #8C8274 ;
+        }
+    
+    /* Novo estilo e forma para dispositivos móveis*/
+    @media screen and (max-width: 767px){
+        
+        header{
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .principal{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .imagem_rai{           
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header class="container">
+    <a aside="nome_rai">
+    <a href="index.html">
+    <img src="nomee_rai.png" width="170" height="85" >
+    </h1>
+    </a>
+
+    <nav class=" container menu">
+    <ul>
+    <li><a href="index.html"> SOBRE MIM </a></li>
+    <li><a href="academic.html"> FORMAÇÃO ACADÊMICA </a></li>
+    <li><a href="portifolio.html"> PORTIFÓLIO </a></li>
+    <li><a href="contact.html"> CONTATO </a></li>
+    </ul>
+    </nav>
+    </header>
+    <br>
+
+    <div class= "container wrapper">
+    <aside class="imagem_rai">
+    <br><br>
+    <img src="rai_png.png" width="350" height="350">
+    <div class="info">
+    <br>
+   <table>
+   <h2 style="font-family: Cambria; text-align: center;"> INFORMAÇÕES: </h2>
+   <tr>
+    <td  style="font-family: Cambria"><strong>Nome Completo</strong></td>
+    <td> Raí Antonio dos Santos Barbosa</td>
+   <tr>
+    <br>
+    <tr>
+        <td style="font-family: Cambria"><strong>Idade</strong></td>
+        <td> 19 Anos</td>
+    </tr>
+    <br>
+    <td style="font-family: Cambria"><strong>Curso</strong></td>
+    <td> Análise e Desenvolvimento de Sistemas</td>
+   </tr>
+   </table>
+    </aside>
+
+    <aside>
+        <section class="principal">
+        <br>
+        <h1 style="color: #0D0D0D; font-family: Cambria; font-size: 22px;"> A MINHA HISTÓRIA</h1>
+        <p style="color: #261501; font-size: 19px;">
+            Olá! Sejam todos bem-vindos ao meu portifólio pessoal.
+            Meu nome é Raí Antonio, e estou atualmente no 2° semestre de Análise e Desenvolvimento de Sistemas na Uninter. Desde criança, tenho uma forte ligação com a tecnologia. Lembro-me de ficar fascinado observando o computador da minha casa, ficava desejando fazer minhas pesquisas escolares ou até mesmo jogar, mas havia uma barreira: eu ainda não sabia ler. Eu estava determinado a superar esse obstáculo e comecei a me dedicar ao máximo na escola e nas aulas de reforço com a minha tia, que ficava perto da minha casa. O meu conhecimento foi crescendo normalmente, até que um dia, eu peguei o teclado e fiz a minha primeira pesquisa sozinho. Hoje, sou apaixonado por programação e tecnologia. 
+        </p>
+        
+        <p style="color: #261501 ; font-size: 19px;">
+            Isso mostra que, quando temos um objetivo e corremos atrás dele, não importa os desafios que estarão na nossa frente, mesmo que demore, um dia esse sonho se torna realidade.
+        </p>
+        
+        <br>
+        <h1 style="font-family: Cambria; font-size: 22px;"> MINHAS EXPERIÊNCIAS: </h1>
+
+        <p><li> HTML</li>
+            <br>
+            <li> CSS</li>
+            <br>
+            <li> JAVASCRIPT</li>
+            <br>
+            <li> PYTHON </li>
+        </p>
+
+        <br>
+
+        <h1 style="font-family: Cambria; font-size: 22px;"> MEUS OBJETIVOS: </h1>
+        <p style="color: #261501 ; font-size: 19px;">
+            Sou um jovem que está trilhando o seu caminho e está buscando a sua primeira experiência com o mercado de trabalho. Não basta ser somente dedicado, ter as habilidades necessárias para o cargo é fundamental e eu estou aprendendo muito com o curso. Este é apenas o meu primeiro passo e eu não vejo a hora de ver as possibilidades que a programação possa me oferecer.
+        </p>
+    </aside>
+    </section>
+    <footer class="footer">
+    <p style="text-align: center;"> Copyright © 2024 Raí Antonio. Todos os direitos reservados. </p>
+    </footer>
+</body>
+</html>

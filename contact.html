@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+    <style>
+        /* corpo do texto, colocando um fundo para site */
+        body{
+            margin: 0;
+            background-image: url(Home.png);
+            background-size: cover;
+        }
+
+        .container{
+            display: grid;
+        }
+
+        /* Estabelecendo meu cabeçalho */
+        header{
+           grid-column-start: 1;
+           grid-column-end: 12;
+           background-color: #8C8274;
+        }
+
+        /* Ajustando o formato do menu */
+        .menu{
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: right;
+            }
+        
+        li{float:left;}
+        
+        /* Colocando tamanhos no meu formulário */
+        section{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 45px;
+            width: 500px;
+        }
+
+        div form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Definindo meus textos na classe principal*/
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+        /* Estilizando o rodapé */
+        footer{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #8C8274;
+            color: white;
+            text-align: center;
+        }
+
+        /* Formatação de menu */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 30px;
+            background-color: #8C8274;
+        }
+        
+
+        li a{
+            display: block;
+            color:white;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover{
+            background-color: white; 
+            color: #8C8274 ;
+        }
+
+        /* Novo estilo e forma para dispositivos móveis*/
+        @media screen and (max-width: 767px){
+        
+        header{
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .formulario{
+            max-width: 100%;            
+        }
+        }
+
+    </style>
+
+</head>
+<body>
+    <header class="container">
+    <a aside="nome_rai">
+    <a href="index.html">
+    <img src="nomee_rai.png" width="170" height="85" >
+    </a>
+
+    <nav class=" container menu">
+    <ul>
+    <li><a href="index.html"> SOBRE MIM </a></li>
+    <li><a href="academic.html"> FORMAÇÃO ACADÊMICA </a></li>
+    <li><a href="portifolio.html"> PORTIFÓLIO </a></li>
+    <li><a href="contact.html"> CONTATO </a></li>
+    </ul>
+    </nav>
+    </header>
+    <br>
+
+    <div class= "container wrapper">
+  
+    <div class="principal">
+    <div class="formulario" >
+    <h2 style="color: #0D0D0D; font-family: Cambria; font-size: 22px;">Preencha o formulário abaixo para que possamos manter contato</h2>
+       <form action="" method="post">
+       <label>Nome:</label>
+       <br>
+       <input type="text" name="nome" placeholder="Digite o seu nome">
+       <br>
+       <label>E-mail:</label>
+       <br>
+       <input type="text" name="e-mail" placeholder="Digite o seu E-mail">
+       <br>
+       <label>Mensagem:</label>
+       <br>
+       <textarea name="mensagem" cols="40" rows="20" placeholder="Digite a sua mensagem"></textarea>
+       <br>
+       <button type="submit">Enviar</button>
+       </form>
+       </div>
+    </div>
+
+</body>
+</html>
